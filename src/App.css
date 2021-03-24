@@ -1,0 +1,125 @@
+.title {
+    background-color: darkslategray;
+    font-size: 1.5em;
+    width: 100%;
+    color: aliceblue;
+    height: 55px;
+}
+.navRow {
+    padding: 0;
+}
+.hidden {
+	display: none;
+}
+.show {
+	display: flex;
+}
+.userIcon {
+    border: 2px solid black;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-size: cover;
+	border-radius: 5px;
+}
+.navBlock {
+    border: 2px solid black;
+    color: aliceblue;
+    font-size: 1.3em;
+}
+.navBlock:hover {
+    color: rgb(67, 200, 253);
+    text-decoration: none;
+}
+.modalScreen {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.6);
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.modalContent {
+    width: 30%;
+    padding: 15px;
+    position: relative;
+    top: -50px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.2);
+	background: white;
+    text-align: center;
+    z-index: 4;
+}
+.modalHeader {
+    margin: 0;
+}
+.escapeButton {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+.listResults {
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.userModal {
+    width: 280px;
+    height: 300px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.botButton {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    font-size: 1.4em;
+}
+.firstNav {
+    z-index: 2;
+}
+.secondNav {
+    margin-top: -2px;
+    z-index: 1;
+}
+.dataChart {
+    width: 600px;
+    height: 600px;
+}
+ol.legend {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 40px;
+}
+ol.legend > li:before {
+    content: counter(item) ") ";
+    counter-increment: item;
+}
+.verticalCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.extendableForm {
+    padding-bottom: 20px;
+}
